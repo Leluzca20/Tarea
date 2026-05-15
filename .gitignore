@@ -40,3 +40,5 @@ __pycache__/
 #
 # NINGUNA se pierde si usas SSH correctamente
 # El token sigue guardado para otros repositorios HTTPS
+agent.md
+
