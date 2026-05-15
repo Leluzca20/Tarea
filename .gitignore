@@ -1,0 +1,42 @@
+# 🔐 IMPORTANTE: NO INCLUYAS TUS CREDENCIALES EN GIT
+
+# Token Personal Access Token (PAT)
+# Tu token NO se guardará en Git porque:
+# ✓ Se almacena en Windows Credential Manager
+# ✓ No está en archivos del repositorio
+# ✓ Git y SSH usan diferentes métodos de autenticación
+
+# Archivos que NUNCA debes commitear:
+*.token
+.env
+.env.local
+credentials.json
+secrets.json
+*.key
+*.pem
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/settings.json
+.idea/
+
+# Node (si usas)
+node_modules/
+package-lock.json
+
+# Python (si usas)
+__pycache__/
+*.pyc
+.venv/
+
+# 📝 NOTAS SOBRE AUTENTICACIÓN:
+# Tu máquina tiene TRES formas de autenticación:
+# 1. Token local (Windows Credential Manager) - Para HTTPS
+# 2. Clave SSH privada (~/.ssh/id_ed25519_cliente) - Para SSH
+# 3. Clave SSH pública (GitHub) - Para verificar tu identidad
+#
+# NINGUNA se pierde si usas SSH correctamente
+# El token sigue guardado para otros repositorios HTTPS
